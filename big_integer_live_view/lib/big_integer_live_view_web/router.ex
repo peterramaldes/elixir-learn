@@ -16,8 +16,7 @@ defmodule BigIntegerLiveViewWeb.Router do
 
   scope "/", BigIntegerLiveViewWeb do
     pipe_through :browser
-
-    get "/", PageController, :index
+    live("/", Live.BigIntegerDisplay)
   end
 
   # Other scopes may use custom stacks.
