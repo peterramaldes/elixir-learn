@@ -2,6 +2,7 @@ import Config
 
 # Configure your database
 config :busi_api, BusiApi.Repo,
+  adapter: Ecto.Adapters.Postgres,
   username: "postgres",
   password: "postgres",
   hostname: "localhost",
